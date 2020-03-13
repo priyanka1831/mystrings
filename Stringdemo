@@ -1,0 +1,45 @@
+package Mystrings;
+
+import java.util.Vector;
+import static java.lang.System.out;
+public class Stringdemo {
+
+	public static void main(String[] args) {
+	    Vector v;
+
+		String s="Hello";
+	    out.println("object id:"+s.hashCode());
+		//Store string constant in String class variable
+		String s1="Hello";
+		out.println("object id:"+s.hashCode());
+		out.println(s1);
+		
+		//define name
+		String name="Suchin";	
+		//adding lastname to the name
+		name.concat("Tendulkar");
+		
+		out.println(name);
+		
+		StringBuffer myname=new StringBuffer("Priyanka");
+		myname.append(" I");
+		
+		out.print(myname);
+		
+		StringBuilder sb=new StringBuilder("Hindustan");
+		sb.append(" Computers Limited");
+		
+		out.println(" is working in "+sb);
+		//create object of Vector class type and assign it to the refence variable v
+		v=new Vector();
+		
+		v.addElement(s1);
+		v.addElement(myname);
+		System.out.println("Collection v:"+v);
+		
+		
+		
+
+	}
+
+}
